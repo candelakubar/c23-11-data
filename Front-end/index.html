@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prex Inspired Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar" class="nav">
+        <div class="brand">FraudeCero</div>
+        <ul>
+            <li><a href="#">Quienes somos</a></li>
+            <li><a href="#">Beneficios</a></li>
+            <li><a href="#">Ayuda</a></li>
+            <li><a href="#">Ingresar</a></li>
+            <li><a href="#">Descargar app</a></li>
+        </ul>
+    </nav>
+    
+    <section class="banner">
+        <div class="content">
+            <h1>Protege tu mundo digital</h1>
+            <p>En nuestra plataforma, te ayudamos a detectar y prevenir fraudes online para que puedas navegar con total seguridad y tranquilidad. Confía en nosotros para proteger tu información y tus finanzas.</p>
+        </div>
+        <div class="image">
+            <img src="img/Ciberdelito.jpg" alt="Imagen ilustrativa de detección de fraudes online">
+        </div>
+    </section>
+    
+    <section class="banner2">
+        
+        <div class="image2">
+            <img src="img/Ciberdelito.jpg" alt="Imagen ilustrativa de detección de fraudes online">
+        </div>
+        <div class="content2">
+            <h1>Protege tu mundo digital</h1>
+            <p>En nuestra plataforma, te ayudamos a detectar y prevenir fraudes online para que puedas navegar con total seguridad y tranquilidad. Confía en nosotros para proteger tu información y tus finanzas.</p>
+        </div>
+        
+    </section>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) { // Cambia el valor según cuándo quieras que se active el cambio
+                navbar.classList.add('fixed');
+            } else {
+                navbar.classList.remove('fixed');
+            }
+        });
+    </script>
+    
+</body>
+
+</html>
